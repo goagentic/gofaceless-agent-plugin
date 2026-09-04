@@ -41,7 +41,7 @@
   },
   "external_prerequisites": {
     "grok_bot_accepts_agent_plugins_1_0": "pending",
-    "public_open_source_plugin_repository": "pending",
+    "public_open_source_plugin_repository": "verified",
     "clean_install_from_reviewed_package": "pending",
     "oauth_link_refresh_revoke_reconnect": "pending",
     "review_only_tool_discovery": "pending",
