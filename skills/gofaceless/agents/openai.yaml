@@ -1,0 +1,11 @@
+interface:
+  display_name: "GoFaceless Video"
+  short_description: "Create and refine GoFaceless videos"
+  default_prompt: "Use $gofaceless to create or refine a video through the shared GoFaceless session workflow."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "gofaceless"
+      description: "Hosted GoFaceless video-session tools"
+      transport: "streamable_http"
+      url: "https://mcp.gofaceless.ai/mcp"

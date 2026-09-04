@@ -1,0 +1,52 @@
+{
+  "schema_version": "gofaceless_openai_plugin_submission.v1",
+  "snapshot_version": "0.1.0-draft.20260722",
+  "status": "pre_submission",
+  "listing": {
+    "name": "GoFaceless",
+    "short_description": "Plan, create, review, and refine durable AI video sessions.",
+    "long_description": "Use GoFaceless from ChatGPT or Codex to plan a supervised video, attach references, review storyboards and candidates, make scene-level revisions, approve exact production steps, render previews, undo changes, and continue the same durable session in the native GoFaceless editor.",
+    "category": "Creativity",
+    "website_url": "https://gofaceless.ai",
+    "support_url": "https://gofaceless.ai/support",
+    "support_email": "support@goagentic.com",
+    "privacy_policy_url": "https://gofaceless.ai/privacy",
+    "terms_url": "https://gofaceless.ai/terms",
+    "publisher_name": "GoFaceless"
+  },
+  "app": {
+    "mcp_server_url": "https://mcp.gofaceless.ai/mcp",
+    "authentication": "oauth",
+    "domain_challenge_url": "https://mcp.gofaceless.ai/.well-known/openai-apps-challenge",
+    "ui_resource_uri": "ui://gofaceless/video-session-v2.html",
+    "csp": {
+      "connect_domains": [],
+      "resource_domains_source": "GOFACELESS_MCP_MEDIA_ORIGINS"
+    },
+    "review_profile": "review_only",
+    "server_scanned_metadata_is_authoritative": true
+  },
+  "starter_prompts": [
+    "Show my latest GoFaceless video sessions and explain which one needs my attention.",
+    "Create a supervised 30-second faceless video and show me the plan before any paid generation.",
+    "Use this reference to guide the visual style of my GoFaceless video without copying protected branding.",
+    "Change only the weakest scene in this GoFaceless session and preserve everything I already accepted.",
+    "Review the current candidate and quality result, then tell me the safest next action."
+  ],
+  "tests": {
+    "file": "test-cases.json",
+    "positive_count": 5,
+    "negative_count": 3
+  },
+  "release_notes": "Initial app-plus-skill submission. GoFaceless exposes a supervised, durable video-session workflow over a hosted OAuth MCP server. It does not publish to social networks, purchase credits, or bypass GoFaceless approval, organization, entitlement, quality, or delivery gates.",
+  "external_prerequisites": {
+    "production_mcp_deployed": "verified",
+    "publisher_identity_verified": "pending",
+    "domain_challenge_verified": "pending",
+    "reviewer_account_without_mfa": "pending",
+    "production_tool_scan_passed": "pending",
+    "web_and_mobile_test_cases_passed": "pending",
+    "country_availability_approved": "pending",
+    "screenshots_captured_from_production_ui": "pending"
+  }
+}

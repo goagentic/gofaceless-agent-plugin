@@ -1,0 +1,35 @@
+{
+  "name": "gofaceless",
+  "version": "0.1.0",
+  "description": "Create, inspect, and refine durable GoFaceless video sessions from AI agents including Codex, ChatGPT, and Grok Bot.",
+  "author": {
+    "name": "GoFaceless",
+    "email": "support@goagentic.com",
+    "url": "https://gofaceless.ai"
+  },
+  "homepage": "https://gofaceless.ai",
+  "repository": "https://github.com/goagentic/gofaceless-agent-plugin",
+  "license": "MIT",
+  "keywords": ["video", "creator", "mcp", "automation"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GoFaceless",
+    "shortDescription": "Create and refine videos with GoFaceless",
+    "longDescription": "Plan, generate, inspect, revise, approve, preview, and recover the same durable GoFaceless video session from an AI conversation or the companion CLI.",
+    "developerName": "GoFaceless",
+    "category": "Creativity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://gofaceless.ai",
+    "privacyPolicyURL": "https://gofaceless.ai/privacy",
+    "termsOfServiceURL": "https://gofaceless.ai/terms",
+    "brandColor": "#CB5C3B",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "defaultPrompt": [
+      "Create a supervised GoFaceless video and show me the plan before generation.",
+      "Review my latest GoFaceless video and improve only the weakest scene.",
+      "Continue a GoFaceless session and explain its next safe action."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

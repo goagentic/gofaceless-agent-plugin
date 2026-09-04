@@ -1,0 +1,51 @@
+{
+  "schema_version": "gofaceless_grok_bot_plugin_submission.v1",
+  "snapshot_version": "0.1.0-draft.20260904",
+  "status": "pre_submission",
+  "listing": {
+    "name": "GoFaceless",
+    "description": "Create, quote, review, generate, monitor, and revise durable AI videos from Grok Bot.",
+    "category": "Creativity",
+    "icon": "icon.png",
+    "website_url": "https://gofaceless.ai",
+    "repository_url": "https://github.com/goagentic/gofaceless-agent-plugin",
+    "support_url": "https://gofaceless.ai/support",
+    "support_email": "support@goagentic.com",
+    "privacy_policy_url": "https://gofaceless.ai/privacy",
+    "terms_url": "https://gofaceless.ai/terms",
+    "publisher_name": "GoFaceless"
+  },
+  "package": {
+    "format": "agent-plugins-1.0",
+    "license": "MIT",
+    "manifest": "plugin.json",
+    "mcp_configuration": "mcp.json",
+    "skill": "skills/gofaceless/SKILL.md",
+    "mcp_server_url": "https://mcp.gofaceless.ai/mcp",
+    "authentication": "oauth",
+    "default_profile": "review_only"
+  },
+  "contact": {
+    "email": "support@goagentic.com"
+  },
+  "starter_prompts": [
+    "Show my GoFaceless videos and tell me which one needs attention.",
+    "Create a supervised 30-second portrait video and show me the quote before I authorize Generate.",
+    "Revise only the selected scene and preserve everything else I accepted.",
+    "Continue monitoring this GoFaceless video and return its preview when ready."
+  ],
+  "tests": {
+    "file": "test-cases.json",
+    "positive_count": 5,
+    "negative_count": 4
+  },
+  "external_prerequisites": {
+    "grok_bot_accepts_agent_plugins_1_0": "pending",
+    "public_open_source_plugin_repository": "pending",
+    "clean_install_from_reviewed_package": "pending",
+    "oauth_link_refresh_revoke_reconnect": "pending",
+    "review_only_tool_discovery": "pending",
+    "isolated_create_quote_authorize_monitor_retrieve_revise": "pending",
+    "marketplace_publisher_review": "pending"
+  }
+}

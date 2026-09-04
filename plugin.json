@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gofaceless",
+  "version": "0.1.0",
+  "description": "Create, quote, authorize, monitor, retrieve, and revise durable GoFaceless videos from an AI agent.",
+  "author": {
+    "name": "GoFaceless",
+    "url": "https://gofaceless.ai"
+  },
+  "homepage": "https://gofaceless.ai",
+  "license": "MIT",
+  "keywords": ["video", "creator", "mcp", "agent-plugin", "grok-bot"]
+}
